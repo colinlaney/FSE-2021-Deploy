@@ -3,7 +3,7 @@ on:
 jobs:
   building:
     name: Checkouts
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
       -
         name: Pull the repository
