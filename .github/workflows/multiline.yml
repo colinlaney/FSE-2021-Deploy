@@ -1,0 +1,12 @@
+on:
+  push
+jobs:
+  idle:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        run: |
+          echo Idle Step
+          date
+          sleep 20
+          whoami
