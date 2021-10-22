@@ -1,7 +1,7 @@
 on:
   push
 jobs:
-  idle:
+  building:
     name: Checkouts
     runs-on: ubuntu-latest
     steps:
@@ -14,3 +14,9 @@ jobs:
         run: docker build -t idle_image .
       -
         run: docker images
+  running:
+    needs: building
+    runs-on: ubuntu-latest
+    steps:
+      -
+        run: docker run --rm -t idle_image
