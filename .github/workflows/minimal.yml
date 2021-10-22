@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        run: echo Idle Step
+        run: echo Idle Step; date; whoami
