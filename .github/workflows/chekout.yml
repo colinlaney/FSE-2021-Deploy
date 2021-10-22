@@ -16,4 +16,4 @@ jobs:
           repository: niessner/BundleFusion
           path: other_repo
       -
-        run: ls
+        run: ls other_repo
