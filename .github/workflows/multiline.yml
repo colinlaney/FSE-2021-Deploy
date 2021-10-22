@@ -2,9 +2,11 @@ on:
   push
 jobs:
   idle:
+    name: Idle Job
     runs-on: ubuntu-latest
     steps:
       -
+        name: Idle Step
         run: |
           echo Idle Step
           date
