@@ -15,6 +15,6 @@ jobs:
       -
         run: docker images
       -
-        run: docker run --rm -t idle_image
+        run: docker run --rm -t -v /datas:/data idle_image
       -
         run: date > dates.log
