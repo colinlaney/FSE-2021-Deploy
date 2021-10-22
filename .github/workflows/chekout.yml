@@ -10,3 +10,10 @@ jobs:
         uses: actions/checkout@v2
       -
         run: ls
+      -
+        uses: actions/checkout@v2
+        with:
+          repository: niessner/BundleFusion
+          path: other_repo
+      -
+        run: ls
